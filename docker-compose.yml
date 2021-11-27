@@ -12,16 +12,10 @@ services:
       DB: sqlite
       GUACD_HOSTNAME: guacd
       GUACD_PORT: 4822
-      # 增加
-      SSHD_ENABLE: "true"
     ports:
       - "8088:8088"
-      # 增加
-      - "8089:8089"
     volumes:
       - /etc/localtime:/etc/localtime
       - ./data:/usr/local/next-terminal/data
-      # 增加
-      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
     restart:
-          always
+      always
