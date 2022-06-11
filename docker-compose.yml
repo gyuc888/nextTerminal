@@ -7,7 +7,7 @@ services:
     restart:
           always
   next-terminal:
-    image: dushixiang/next-terminal:1.2.1
+    image: dushixiang/next-terminal:1.2.2
     environment:
       DB: sqlite
       GUACD_HOSTNAME: guacd
